@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopoly Automobile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Monopoly Automobile</h1>
+    <div id="board">
+        <!-- Le plateau de jeu sera ici -->
+        <div class="plateau">
+            <img src="image/plateau.png" alt="plateau">
+        </div>
+
+    </div>
+    <div id="cards">
+        <h2>Cartes Chance et Caisse de Communauté</h2>
+        <div class="card" id="chance">
+            <h3>Chance</h3>
+            <!-- Les cartes Chance seront ici -->
+            <div class="cadre-grid">
+                <div class="card-caisse">
+                    <div class="card-img5">
+                        <img src="image/chance.png" alt="chance">
+                    </div>
+                    <div class="card-title">Chance</div>
+                    <div class="card-subtitle">Votre voiture gagne une course, recevez 200€.</div>
+                    <hr class="card-divider">
+                    <div class="card-footer">
+                        <button class="card-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z">
+                                </path>
+                                <path
+                                    d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z">
+                                </path>
+                                <path
+                                    d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z">
+                                </path>
+                                <path
+                                    d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cadre-grid">
+                <div class="card-caisse">
+                    <div class="card-img5">
+                        <img src="image/chance.png" alt="chance">
+                    </div>
+                    <div class="card-title">Chance</div>
+                    <div class="card-subtitle">Panne mécanique, payez 50€ pour les réparations.</div>
+                    <hr class="card-divider">
+                    <div class="card-footer">
+                        <button class="card-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z">
+                                </path>
+                                <path
+                                    d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z">
+                                </path>
+                                <path
+                                    d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z">
+                                </path>
+                                <path
+                                    d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cadre-grid">
+                <div class="card-caisse">
+                    <div class="card-img5">
+                        <img src="image/chance.png" alt="chance">
+                    </div>
+                    <div class="card-title">Chance</div>
+                    <div class="card-subtitle">Recevez un bonus de 100€ pour entretien impeccable.</div>
+                    <hr class="card-divider">
+                    <div class="card-footer">
+                        <button class="card-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z">
+                                </path>
+                                <path
+                                    d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z">
+                                </path>
+                                <path
+                                    d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z">
+                                </path>
+                                <path
+                                    d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cadre-grid">
+                <div class="card-caisse">
+                    <div class="card-img5">
+                        <img src="image/chance.png" alt="chance">
+                    </div>
+                    <div class="card-title">Chance</div>
+                    <div class="card-subtitle">Vous avez vendu une voiture, recevez 150€.</div>
+                    <hr class="card-divider">
+                    <div class="card-footer">
+                        <button class="card-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z">
+                                </path>
+                                <path
+                                    d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z">
+                                </path>
+                                <path
+                                    d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z">
+                                </path>
+                                <path
+                                    d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="card" id="community">
+            <h3>Caisse de Communauté</h3>
+            <br>
+            <!-- Les cartes Caisse de Communauté seront ici -->
+            <div class="cadre-grid">
+                <div class="card-caisse">
+                    <div class="card-img">
+                        <img src="image/MAAF.png" alt="MAAF">
+                    </div>
+                    <div class="card-title">Assurance</div>
+                    <div class="card-subtitle">Votre assurance vous rembourse 100€.</div>
+                    <hr class="card-divider">
+                    <div class="card-footer">
+                        <button class="card-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z">
+                                </path>
+                                <path
+                                    d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z">
+                                </path>
+                                <path
+                                    d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z">
+                                </path>
+                                <path
+                                    d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card-caisse">
+                <div class="card-img2">
+                    <img src="image/Concours.png" alt="concours">
+                </div>
+                <div class="card-title">Concours tuning</div>
+                <div class="card-subtitle">Vous avez remporté un concours de tuning, recevez 150€.</div>
+                <hr class="card-divider">
+                <div class="card-footer">
+                    <button class="card-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z">
+                            </path>
+                            <path
+                                d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z">
+                            </path>
+                            <path
+                                d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z">
+                            </path>
+                            <path
+                                d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <br>
+            <div class="card-caisse">
+                <div class="card-img3">
+                    <img src="image/Stationnement.png" alt="stationnement">
+                </div>
+                <div class="card-title">Stationnement</div>
+                <div class="card-subtitle">Payez 50€ pour le stationnement.</div>
+                <hr class="card-divider">
+                <div class="card-footer">
+                    <button class="card-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z">
+                            </path>
+                            <path
+                                d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z">
+                            </path>
+                            <path
+                                d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z">
+                            </path>
+                            <path
+                                d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <br>
+            <div class="card-caisse">
+                <div class="card-img4">
+                    <img src="image/reparation.png" alt="Réparation">
+                </div>
+                <div class="card-title">Réparation</div>
+                <div class="card-subtitle">Réparez votre voiture, payez 100€.</div>
+                <hr class="card-divider">
+                <div class="card-footer">
+                    <button class="card-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z">
+                            </path>
+                            <path
+                                d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z">
+                            </path>
+                            <path
+                                d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z">
+                            </path>
+                            <path
+                                d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    <h2>Garages et Concessions</h2>
+    <br>
+    <div class="card" id="garages">
+        <h3>Garages</h3>
+        <!-- Les cartes des garages seront ici -->
+        <div class="property-card">
+            <div class="property-header">
+                <h2>Norauto</h2>
+                <p>Prix: 100€</p>
+            </div>
+            <div class="property-body">
+                <p><strong>Loyer :</strong> 60€</p>
+                <p><strong>Avec 1 maison :</strong> 180€</p>
+                <p><strong>Avec 2 maisons :</strong> 540€</p>
+                <p><strong>Avec 3 maisons :</strong> 1000€</p>
+                <p><strong>Avec 4 maisons :</strong> 1500€</p>
+                <p><strong>Avec hôtel :</strong> 2000€</p>
+                <p><strong>Hypothèque :</strong> 50€</p>
+            </div>
+        </div>
+        <br>
+        <div class="property-group">
+            <div class="property-card">
+                <div class="property-header">
+                    <h2>Feu Vert</h2>
+                    <p>Prix: 120€</p>
+                </div>
+                <div class="property-body">
+                    <p><strong>Loyer :</strong> 60€</p>
+                    <p><strong>Avec 1 maison :</strong> 180€</p>
+                    <p><strong>Avec 2 maisons :</strong> 540€</p>
+                    <p><strong>Avec 3 maisons :</strong> 1000€</p>
+                    <p><strong>Avec 4 maisons :</strong> 1500€</p>
+                    <p><strong>Avec hôtel :</strong> 2000€</p>
+                    <p><strong>Hypothèque :</strong> 60€</p>
+                </div>
+            </div>
+            <br>
+            <div class="property-group">
+                <div class="property-card">
+                    <div class="property-header">
+                        <h2>Midas</h2>
+                        <p>Prix: 140€</p>
+                    </div>
+                    <div class="property-body">
+                        <p><strong>Loyer :</strong> 80€</p>
+                        <p><strong>Avec 1 maison :</strong> 220€</p>
+                        <p><strong>Avec 2 maisons :</strong> 660€</p>
+                        <p><strong>Avec 3 maisons :</strong> 1100€</p>
+                        <p><strong>Avec 4 maisons :</strong> 1600€</p>
+                        <p><strong>Avec hôtel :</strong> 2100€</p>
+                        <p><strong>Hypothèque :</strong> 70€</p>
+                    </div>
+                </div>
+                <br>
+                <div class="property-group">
+                    <div class="property-card">
+                        <div class="property-header2">
+                            <h2>Speedy</h2>
+                            <p>Prix: 160€</p>
+                        </div>
+                        <div class="property-body">
+                            <p><strong>Loyer :</strong> 100€</p>
+                            <p><strong>Avec 1 maison :</strong> 300€</p>
+                            <p><strong>Avec 2 maisons :</strong> 900€</p>
+                            <p><strong>Avec 3 maisons :</strong> 1600€</p>
+                            <p><strong>Avec 4 maisons :</strong> 2500€</p>
+                            <p><strong>Avec hôtel :</strong> 3000€</p>
+                            <p><strong>Hypothèque :</strong> 80€</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="property-group">
+                        <div class="property-card">
+                            <div class="property-header2">
+                                <h2>Point S</h2>
+                                <p>Prix: 180€</p>
+                            </div>
+                            <div class="property-body">
+                                <p><strong>Loyer :</strong> 100€</p>
+                                <p><strong>Avec 1 maison :</strong> 300€</p>
+                                <p><strong>Avec 2 maisons :</strong> 900€</p>
+                                <p><strong>Avec 3 maisons :</strong> 1600€</p>
+                                <p><strong>Avec 4 maisons :</strong> 2500€</p>
+                                <p><strong>Avec hôtel :</strong> 3000€</p>
+                                <p><strong>Hypothèque :</strong> 90€</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="property-group">
+                            <div class="property-card">
+                                <div class="property-header2">
+                                    <h2>Euromaster</h2>
+                                    <p>Prix: 200€</p>
+                                </div>
+                                <div class="property-body">
+                                    <p><strong>Loyer :</strong> 120€</p>
+                                    <p><strong>Avec 1 maison :</strong> 360€</p>
+                                    <p><strong>Avec 2 maisons :</strong> 1000€</p>
+                                    <p><strong>Avec 3 maisons :</strong> 1700€</p>
+                                    <p><strong>Avec 4 maisons :</strong> 2600€</p>
+                                    <p><strong>Avec hôtel :</strong> 3100€</p>
+                                    <p><strong>Hypothèque :</strong> 100€</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="property-group">
+                                <div class="property-card">
+                                    <div class="property-header3">
+                                        <h2>Garage AD</h2>
+                                        <p>Prix: 220€</p>
+                                    </div>
+                                    <div class="property-body">
+                                        <p><strong>Loyer :</strong> 140€</p>
+                                        <p><strong>Avec 1 maison :</strong> 400€</p>
+                                        <p><strong>Avec 2 maisons :</strong> 1100€</p>
+                                        <p><strong>Avec 3 maisons :</strong> 1800€</p>
+                                        <p><strong>Avec 4 maisons :</strong> 2700€</p>
+                                        <p><strong>Avec hôtel :</strong> 3200€</p>
+                                        <p><strong>Hypothèque :</strong> 110€</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="property-group">
+                                    <div class="property-card">
+                                        <div class="property-header3">
+                                            <h2>First Stop</h2>
+                                            <p>Prix: 240€</p>
+                                        </div>
+                                        <div class="property-body">
+                                            <p><strong>Loyer :</strong> 140€</p>
+                                            <p><strong>Avec 1 maison :</strong> 400€</p>
+                                            <p><strong>Avec 2 maisons :</strong> 1100€</p>
+                                            <p><strong>Avec 3 maisons :</strong> 1800€</p>
+                                            <p><strong>Avec 4 maisons :</strong> 2700€</p>
+                                            <p><strong>Avec hôtel :</strong> 3200€</p>
+                                            <p><strong>Hypothèque :</strong> 120€</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="property-group">
+                                        <div class="property-card">
+                                            <div class="property-header3">
+                                                <h2>Roady</h2>
+                                                <p>Prix: 260€</p>
+                                            </div>
+                                            <div class="property-body">
+                                                <p><strong>Loyer :</strong> 160€</p>
+                                                <p><strong>Avec 1 maison :</strong> 400€</p>
+                                                <p><strong>Avec 2 maisons :</strong> 1200€</p>
+                                                <p><strong>Avec 3 maisons :</strong> 1900€</p>
+                                                <p><strong>Avec 4 maisons :</strong> 2800€</p>
+                                                <p><strong>Avec hôtel :</strong> 3300€</p>
+                                                <p><strong>Hypothèque :</strong> 130€</p>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="property-group">
+                                            <div class="property-card">
+                                                <div class="property-header4">
+                                                    <h2>Total</h2>
+                                                    <p>Prix: 280€</p>
+                                                </div>
+                                                <div class="property-body">
+                                                    <p><strong>Loyer :</strong> 180€</p>
+                                                    <p><strong>Avec 1 maison :</strong> 500€</p>
+                                                    <p><strong>Avec 2 maisons :</strong> 1300€</p>
+                                                    <p><strong>Avec 3 maisons :</strong> 2000€</p>
+                                                    <p><strong>Avec 4 maisons :</strong> 2900€</p>
+                                                    <p><strong>Avec hôtel :</strong> 3400€</p>
+                                                    <p><strong>Hypothèque :</strong> 140€</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="property-group">
+                                        <div class="property-card">
+                                            <div class="property-header4">
+                                                <h2>Shell</h2>
+                                                <p>Prix: 300€</p>
+                                            </div>
+                                            <div class="property-body">
+                                                <p><strong>Loyer :</strong> 180€</p>
+                                                <p><strong>Avec 1 maison :</strong> 500€</p>
+                                                <p><strong>Avec 2 maisons :</strong> 1300€</p>
+                                                <p><strong>Avec 3 maisons :</strong> 2000€</p>
+                                                <p><strong>Avec 4 maisons :</strong> 2900€</p>
+                                                <p><strong>Avec hôtel :</strong> 3400€</p>
+                                                <p><strong>Hypothèque :</strong> 150€</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="property-group">
+                                    <div class="property-card">
+                                        <div class="property-header4">
+                                            <h2>BP</h2>
+                                            <p>Prix: 320€</p>
+                                        </div>
+                                        <div class="property-body">
+                                            <p><strong>Loyer :</strong> 200€</p>
+                                            <p><strong>Avec 1 maison :</strong> 550€</p>
+                                            <p><strong>Avec 2 maisons :</strong> 1400€</p>
+                                            <p><strong>Avec 3 maisons :</strong> 2100€</p>
+                                            <p><strong>Avec 4 maisons :</strong> 3000€</p>
+                                            <p><strong>Avec hôtel :</strong> 3500€</p>
+                                            <p><strong>Hypothèque :</strong> 160€</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script src="script.js"></script>
+</body>
+
+</html>
